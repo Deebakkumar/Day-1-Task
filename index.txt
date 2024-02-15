@@ -1,0 +1,40 @@
+1.Write a blog on Difference between HTTP1. vs HTTP2
+HTTP1
+ 1. loads resources one after the other
+ 2. so if one resource cannot be loaded
+ 3. it blocks all the other resources behind it
+ 4. It works on the textual format
+ 5. There is head of line blocking that blocks all
+  the requests behind it until it doesn’t get its all resources
+  6. It uses requests resource Inlining for use getting multiple pages
+  7. It compresses data by itself 
+  8. The Upgrade header was used to indicate a preference from the client that made 
+   9.it possible to switch to a more preferred protocol if found appropriate by the server
+
+HTTP2
+ 1. Its able to use a single TCP connection 
+ 2. to send multiple streams of data at once
+ 3. so that no one resource blocks any other resource
+ 4. It works on the binary protocol
+ 5. It allows multiplexing so one TCP connection is required for multiple requests
+ 6. It uses PUSH frame by server that collects all multiple pages 
+ 7. It uses HPACK for data compression
+ 8. Introduces the concept of multiplexing that interleaves the requests and responses
+  without head-of-line blocking and does so over a single TCP connection.
+
+2.Write a blog about objects and its internal representation in Javascript
+
+1. Javascript objects are related to real life world object
+2. It is a entity which have some properties and respective types
+3. Objects and Arrays are mutable in nature it mean 
+4. Its  state can be modified after it is created
+5. Objects, in JavaScript, is it’s most important data-type 
+6. forms the building blocks for modern JavaScript
+7. Objects are more complex and each object may contain any combination of 
+these primitive data-types as well as reference data-types
+8. These objects are quite different from JavaScript’s primitive data-types(Number, String, Boolean, null, undefined and symbol)
+ in the sense that while these primitive data-types all store a single value each (depending on their types)
+
+example. Your coffee cup have certain featues like it's colour , design, weight 
+ your dog, your desk, your television set, your bicycle
+  car, pen, mobile, email, bank account.
